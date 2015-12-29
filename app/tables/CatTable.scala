@@ -8,7 +8,7 @@ trait CatTable {
 
   import driver.api._
 
-  class Cats(tag: Tag) extends Table[Cat](tag, "CAT") {
+  class Cats(tag: Tag) extends Table[Cat](tag, "cat") {
 
     def name = column[String]("NAME", O.PrimaryKey)
 
